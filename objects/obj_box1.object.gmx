@@ -143,7 +143,7 @@ seen = false
             lampSeen = false
         } 
    }
-    }
+}
 
 
 </string>

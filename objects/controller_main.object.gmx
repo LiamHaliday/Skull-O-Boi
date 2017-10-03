@@ -42,7 +42,7 @@ global.screenHeight = display_get_height();
 global.playerHit = false;
 global.playerGod = false;
 
-audio_play_sound(BGM, 10, true);
+//audio_play_sound(BGM, 10, true);   // no sound 
 
 global.hudOFF = false
 

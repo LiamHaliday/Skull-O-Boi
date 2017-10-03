@@ -99,13 +99,13 @@ if (global.isWalking == false){
         
         if ( global.flashlightOn == true)
         {
-            audio_play_sound(flashlightON, 15, false);
+           // audio_play_sound(flashlightON, 15, false);
             global.flashlightOn = false; 
                 
         }
         else
         {
-            audio_play_sound(flashlightOFF, 14, false);
+          //  audio_play_sound(flashlightOFF, 14, false);
             global.flashlightOn = true;
         }
    }

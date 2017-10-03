@@ -53,6 +53,7 @@
     <sprite>sprites\spr_light_window</sprite>
     <sprite>sprites\spr_mainMenu</sprite>
     <sprite>sprites\spr_menuButton</sprite>
+    <sprite>sprites\spr_SmooshyGuy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -82,8 +83,11 @@
       <object>objects\obj_player1arm</object>
     </objects>
     <objects name="Enemy">
-      <object>objects\obj_box1</object>
-      <object>objects\obj_eyes_break</object>
+      <objects name="EmenyOne">
+        <object>objects\obj_box1</object>
+        <object>objects\obj_eyes_break</object>
+      </objects>
+      <object>objects\obj_EnemyTwo</object>
     </objects>
     <objects name="Main Menu">
       <object>objects\obj_mainMenu</object>
@@ -106,6 +110,7 @@
     <object>objects\let_there_be_light</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Liam_Test_World</room>
     <room>rooms\MainMenu</room>
     <room>rooms\Main_level</room>
     <room>rooms\changeRoom</room>
