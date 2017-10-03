@@ -29,15 +29,7 @@
  
  image_xscale = 0.20
  image_yscale = 0.20
- 
- rightLine.x = player.x + 50
- rightLine.y = player.y 
- 
- leftLine.x = player.x + 50
- leftLine.y = player.y 
- 
- goingLeft = true
- goingRight = false 
+
 </string>
           </argument>
         </arguments>
@@ -60,10 +52,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if leftLine = true
+            <string>
+if (!collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
+    )
 {
-
+    //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);
+    mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
 }
+
 
 </string>
           </argument>
