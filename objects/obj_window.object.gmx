@@ -61,7 +61,16 @@ if (bangON == true)
  
     global.ambient_light = 1
     sprite_index = spr_light_window;
-     
+
+    if (bangTimer &gt; 3){
+    sprite_index = spr_window;
+    }
+
+    if (bangTimer &gt; 6){
+    global.ambient_light = 1
+    sprite_index = spr_light_window;
+    }
+    
     if(bangTimer &gt; 30)
     {      
        audio_play_sound(thunder, 10, false);

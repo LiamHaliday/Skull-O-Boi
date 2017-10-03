@@ -60,6 +60,7 @@
     <background>background\level1floor</background>
     <background>background\level1walls</background>
     <background>background\background3</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
@@ -110,9 +111,9 @@
     <object>objects\let_there_be_light</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Main_level</room>
     <room>rooms\Liam_Test_World</room>
     <room>rooms\MainMenu</room>
-    <room>rooms\Main_level</room>
     <room>rooms\changeRoom</room>
     <room>rooms\room_level__1</room>
     <room>rooms\room_level_2</room>
