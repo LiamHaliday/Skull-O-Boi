@@ -27,12 +27,15 @@
             <kind>1</kind>
             <string>// Global Variables
 
-
 playerSpeed = 7.5;
 
 global.gotkey = false
 
 godTime = 5
+
+seen = false
+seenAngle = 32.5;
+lampSeen = false
 </string>
           </argument>
         </arguments>
@@ -135,6 +138,42 @@ if (point_direction(x,y,mouse_x,mouse_y) &lt; 180)
      image_xscale = 1
     } 
  }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// If Player in Lamp Range (Gain Battery)
+    
+var i;
+for (i = 0; i &lt; instance_number(obj_lamp); i += 1){ 
+    if(lampSeen == false){
+        //lamp spr_test_lightLamp
+        if (point_distance(instance_find(obj_lamp,i).x, instance_find(obj_lamp,i).y, x,y - 400 ) &lt; 400){
+            //instance_create(x, y, obj_window)
+            global.batteryLife += 0.10; // Gain Battery Life back
+            //lampSeen = true
+        }
+        else{
+            lampSeen = false
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

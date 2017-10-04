@@ -52,8 +52,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (!collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
+            <string>if (!collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
     &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
     &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
     )

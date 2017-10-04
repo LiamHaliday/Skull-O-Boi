@@ -49,7 +49,7 @@ bangTimer = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.ambient_light = 0.02
+            <string>global.ambient_light = 0.00
 
 if ((random(10000) &gt;= 9990) &amp;&amp; bangON == false)
     {
@@ -62,11 +62,11 @@ if (bangON == true)
     global.ambient_light = 1
     sprite_index = spr_light_window;
 
-    if (bangTimer &gt; 3){
+    if (bangTimer == 300){
     sprite_index = spr_window;
     }
 
-    if (bangTimer &gt; 6){
+    if (bangTimer == 600){
     global.ambient_light = 1
     sprite_index = spr_light_window;
     }

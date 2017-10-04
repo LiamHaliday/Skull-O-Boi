@@ -80,8 +80,6 @@ if (global.batteryLife &gt; 100){
     global.flashlightOn = false
 }
 
-
-
 if (global.flashlightOn == true )
 {
     global.batteryLife -= 0.2;
@@ -136,8 +134,6 @@ if(global.playerLives == 0)
 
 
 // Battery Bar
-
-
 draw_sprite(spr_batteryUI, 2, 980, 10);  // Back Casing
 draw_sprite_part(spr_batteryUI, 0, 45 , 0, (((sprite_get_width(spr_batteryUI) - 45) / 100) * global.batteryLife) 
 , sprite_get_height(spr_batteryUI), 1025, 10)

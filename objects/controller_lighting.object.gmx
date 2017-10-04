@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>// Ambient Lighting
-global.ambient_light = 0.00; //ambient_light = 0.02;
+global.ambient_light = 0.02; //ambient_light = 0.02;
 
 global.light_surface = surface_create(view_wview, view_hview);
 
@@ -130,28 +130,24 @@ for (i = 0; i &lt; instance_number(obj_box1); i += 1)
         draw_sprite_ext(spr_eyes, 1, instance_find(obj_box1,i).x - view_xview, instance_find(obj_box1,i).y - view_yview, 1, 1, 
               0, c_white, 1);   
     }
-   
-    
-  
-   
    }
   
    
-   var i;
-   for (i = 0; i &lt; instance_number(obj_lamp); i += 1)
-   {
-   
-    enemy[i] = instance_find(obj_lamp,i).x;
+    var i;
+    for (i = 0; i &lt; instance_number(obj_lamp); i += 1)
+    {
+        enemy[i] = instance_find(obj_lamp,i).x;
   
         //lamp spr_test_lightLamp
         draw_sprite_ext(spr_lamp_light, 0, instance_find(obj_lamp,i).x - view_xview, instance_find(obj_lamp,i).y - view_yview, 1, 1, 
               0, c_white, 1);   
-    }
-    
               
+    }
+}
+    
+// Light around Player
 draw_sprite_ext(spr_haze, 0, obj_player1.x - view_xview, obj_player1.y - view_yview, 1, 1, 
-                0, c_white, 1);  
-            }    
+                0, c_white, 1);     
 
 draw_set_blend_mode(bm_normal);
 surface_reset_target();

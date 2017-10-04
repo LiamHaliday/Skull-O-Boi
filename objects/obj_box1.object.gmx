@@ -97,9 +97,6 @@ point_distance(obj_player1.x,obj_player1.y, x,y)
 
 maxseenhight = point_direction(obj_player1.x,obj_player1.y, mouse_x, mouse_y);
 
-
-
-
 if (point_direction(obj_player1.x,obj_player1.y, x,y) &lt; seenAngle)
 {
     if (maxseenhight  &gt; 340)
@@ -144,8 +141,6 @@ seen = false
         } 
    }
 }
-
-
 </string>
           </argument>
         </arguments>
