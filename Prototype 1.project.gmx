@@ -14,6 +14,10 @@
   <sprites name="sprites">
     <sprite>sprites\spr_box1</sprite>
     <sprite>sprites\spr_eyes</sprite>
+    <sprites name="floater">
+      <sprite>sprites\spr_floater_eyes</sprite>
+      <sprite>sprites\spr_floater</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player1</sprite>
       <sprite>sprites\spr_flashlight</sprite>
@@ -54,6 +58,7 @@
     <sprite>sprites\spr_mainMenu</sprite>
     <sprite>sprites\spr_menuButton</sprite>
     <sprite>sprites\spr_SmooshyGuy</sprite>
+    <sprite>sprites\spr_armChair</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -88,7 +93,11 @@
         <object>objects\obj_box1</object>
         <object>objects\obj_eyes_break</object>
       </objects>
-      <object>objects\obj_EnemyTwo</object>
+      <objects name="floater">
+        <object>objects\obj_EnemyFloater</object>
+        <object>objects\Floater_Spawner</object>
+        <object>objects\obj_floater_eyes</object>
+      </objects>
     </objects>
     <objects name="Main Menu">
       <object>objects\obj_mainMenu</object>
@@ -109,6 +118,7 @@
     <object>objects\obj_enemy_eyes</object>
     <object>objects\obj_lamp</object>
     <object>objects\let_there_be_light</object>
+    <object>objects\obj_armChair</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_level</room>
