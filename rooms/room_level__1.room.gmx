@@ -177,7 +177,6 @@
     <instance objName="obj_player1arm" x="1344" y="1728" name="inst_D4EBE735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player1" x="1344" y="1728" name="inst_13E044AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller_main" x="36" y="0" name="inst_2306EE1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="controller_lighting" x="66" y="0" name="inst_040704AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key" x="3040" y="3104" name="inst_3C56AD5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller_camera" x="0" y="0" name="inst_DC6FBD20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box1" x="1696" y="3456" name="inst_47A0264B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

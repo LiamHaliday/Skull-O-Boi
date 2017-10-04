@@ -85,8 +85,8 @@
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
-      <object>objects\controller_lighting</object>
       <object>objects\obj_player1arm</object>
+      <object>objects\controller_lighting</object>
     </objects>
     <objects name="Enemy">
       <objects name="EmenyOne">
@@ -96,7 +96,6 @@
       <objects name="floater">
         <object>objects\obj_EnemyFloater</object>
         <object>objects\Floater_Spawner</object>
-        <object>objects\obj_floater_eyes</object>
       </objects>
     </objects>
     <objects name="Main Menu">
