@@ -237,11 +237,24 @@ if !lampSeen
         {
              //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);
              //mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
-             move_towards_point(obj_player1.x, obj_player1.y, speedF );
+             move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
         }
+        else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
+        
     }
+            else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
+    
 }
-
+        else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
 
     
 
