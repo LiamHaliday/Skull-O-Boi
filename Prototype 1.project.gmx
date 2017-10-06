@@ -120,8 +120,8 @@
     <object>objects\obj_armChair</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Main_level</room>
     <room>rooms\Liam_Test_World</room>
+    <room>rooms\Main_level</room>
     <room>rooms\MainMenu</room>
     <room>rooms\changeRoom</room>
     <room>rooms\room_level__1</room>
