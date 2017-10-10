@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>lightningJump = false;
 EnemySpeed = 1;
 
 seen = false
@@ -248,7 +248,7 @@ if !lampSeen
             //lightning
             if(instance_exists(obj_window))
             {
-                if (global.lightingON == true &amp;&amp; lightningJump == true)
+                if (global.lightningON == true &amp;&amp; lightningJump == true)
                 {
                    // if mp_linear_step (obj_player1.x, obj_player1.y, 250 , false);
                     {
@@ -262,7 +262,7 @@ if !lampSeen
                 }
                 else
                 {
-                    if global.lightingON == false
+                    if global.lightningON == false
                      {
                         lightningJump = true
                      }

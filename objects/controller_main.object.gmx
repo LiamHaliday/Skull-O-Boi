@@ -134,12 +134,17 @@ if(global.playerLives == 0)
 
 
 // Battery Bar
-draw_sprite(spr_batteryUI, 2, 980, 10);  // Back Casing
+/*draw_sprite(spr_batteryUI, 2, 980, 10);  // Back Casing
 draw_sprite_part(spr_batteryUI, 0, 45 , 0, (((sprite_get_width(spr_batteryUI) - 45) / 100) * global.batteryLife) 
 , sprite_get_height(spr_batteryUI), 1025, 10)
-draw_sprite(spr_batteryUI, 1, 980, 10);  // Front Casing
+draw_sprite(spr_batteryUI, 1, 980, 10);  // Front Casing*/
 
+draw_sprite(spr_batteryUI, 2, obj_player1.x, obj_player1.y);  // Back Casing
+draw_sprite_part(spr_batteryUI, 0, 45 , 0, (((sprite_get_width(spr_batteryUI) - 45) / 100) * global.batteryLife) 
+, sprite_get_height(spr_batteryUI), obj_player1.x, obj_player1.y)
+draw_sprite(spr_batteryUI, 1, obj_player1.x, obj_player1.y);  // Front Casing
 
+draw_sprite(spr_box1, 0, obj_player1.x, obj_player1.y);
 
 
 //draw_healthbar(1252,85 , 1055, 25, global.batteryLife, c_white, c_red, c_green, 0, false, false); 

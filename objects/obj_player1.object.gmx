@@ -60,7 +60,6 @@ lampSeen = false
             <kind>1</kind>
             <string>//image_angle = point_direction(x, y, mouse_x, mouse_y);
 
-
 // Player Movement
 // [W]
 if (keyboard_check(ord('W'))) &amp;&amp; place_free(x, y - playerSpeed) { y -= playerSpeed; image_speed = 0.1; global.isWalking = true; };
@@ -106,10 +105,10 @@ if (global.isWalking == false){
             global.flashlightOn = false; 
                 
         }
-        else
-        {
-          //  audio_play_sound(flashlightOFF, 14, false);
+        else if (global.batteryLife &gt; 10){
+            
             global.flashlightOn = true;
+          //  audio_play_sound(flashlightOFF, 14, false);
         }
    }
 if (point_direction(x,y,mouse_x,mouse_y) &lt; 180)
