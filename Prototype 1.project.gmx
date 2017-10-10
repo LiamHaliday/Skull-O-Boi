@@ -90,6 +90,7 @@
       <sprite>sprites\spr_yellowkey</sprite>
       <sprite>sprites\spr_bluekey</sprite>
     </sprites>
+    <sprite>sprites\spr_dustparticle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -149,6 +150,7 @@
     <object>objects\obj_lamp</object>
     <object>objects\let_there_be_light</object>
     <object>objects\obj_armChair</object>
+    <object>objects\obj_dustparticle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_level</room>

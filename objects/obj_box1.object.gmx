@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>lightningJump = false;
 EnemySpeed = 1;
 
 seen = false
