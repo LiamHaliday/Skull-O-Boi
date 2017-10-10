@@ -31,6 +31,8 @@ EnemySpeed = 1;
 seen = false
 seenAngle = 32.5;
 lampSeen = false
+
+lightningJump = false
 </string>
           </argument>
         </arguments>
@@ -161,6 +163,119 @@ seen = false
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// real movement
+
+if !lampSeen  
+{
+    if (global.flashlightOn == false)
+    {
+        seen = false
+    }
+    
+    if (seen == false )
+    {     
+    
+        if (!collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
+        &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
+        &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
+            )
+        {
+             
+             //mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
+             move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
+             
+            //lightning
+            if(instance_exists(obj_window))
+            {
+                if (global.lightingON == true &amp;&amp; lightningJump == true)
+                {
+                   // if 
+                    {
+                        // move_towards_point(obj_player1.x, obj_player1.y, 250 ); 
+                         mp_potential_step(obj_player1.x, obj_player1.y, 250, false)                  
+                    }
+
+                    
+                    lightningJump = false
+                }
+                else
+                {
+                    if global.lightingON == false
+                     {
+                        lightningJump = true
+                     }
+                }
+            }
+             
+        }
+        else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
+        
+    }
+            else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
+    
+}
+        else
+        {
+            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+        }
+
+    
+        
+        
+// lightning
+if(instance_exists(obj_window))
+{
+
+
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Movement
 
    // if (lampSeen == false)
@@ -198,68 +313,6 @@ seen = false
  }
 
  
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// real movement
-
-if !lampSeen  
-{
-    if (global.flashlightOn == false)
-    {
-        seen = false
-    }
-    
-    if (seen == false )
-    {     
-    
-        if (!collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
-        &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
-        &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
-            )
-        {
-             //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);
-             //mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
-             move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
-        }
-        else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
-        }
-        
-    }
-            else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
-        }
-    
-}
-        else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
-        }
-
-    
-
-
-
 </string>
           </argument>
         </arguments>

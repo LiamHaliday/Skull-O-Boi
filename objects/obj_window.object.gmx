@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bangON = false
+            <string>//bangON = false
+global.lightingON = false
 bangTimer = 0;
 </string>
           </argument>
@@ -51,12 +52,12 @@ bangTimer = 0;
             <kind>1</kind>
             <string>global.ambient_light = 0.00
 
-if ((random(10000) &gt;= 9990) &amp;&amp; bangON == false)
+if ((random(10000) &gt;= 9990) &amp;&amp; global.lightingON == false)
     {
-    bangON = true;
+    global.lightingON  = true;
     }
 
-if (bangON == true)
+if (global.lightingON  == true)
 {
  
     global.ambient_light = 1
@@ -74,7 +75,7 @@ if (bangON == true)
     if(bangTimer &gt; 30)
     {      
        audio_play_sound(thunder, 10, false);
-       bangON = false;
+       global.lightingON  = false;
     }
     bangTimer += 1;
 }
