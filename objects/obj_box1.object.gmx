@@ -235,31 +235,47 @@ if !lampSeen
         &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
             )
         {
-             //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);
+             
              //mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
-             move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
-        }
-        else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
+             //
+             
+             canMove = true
+             if mp_linear_step (obj_player1.x, obj_player1.y, 2.5 , false)
+             {
+                move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
+             }
+             
+            //lightning
+            if(instance_exists(obj_window))
+            {
+                if (global.lightingON == true &amp;&amp; lightningJump == true)
+                {
+                   // if mp_linear_step (obj_player1.x, obj_player1.y, 250 , false);
+                    {
+                     //   move_towards_point(obj_player1.x, obj_player1.y, 250 );               
+                    
+                        
+                    }
+
+                    
+                    lightningJump = false
+                }
+                else
+                {
+                    if global.lightingON == false
+                     {
+                        lightningJump = true
+                     }
+                     
+                }
+                
+            }
+             
         }
         
     }
-            else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
-        }
     
 }
-        else
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, 0.0 );
-        }
-
-    
-
-
-
 </string>
           </argument>
         </arguments>
