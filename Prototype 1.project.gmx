@@ -49,16 +49,47 @@
     <sprite>sprites\spr_lvl1floor</sprite>
     <sprite>sprites\spr_cont</sprite>
     <sprite>sprites\spr_collisionObject</sprite>
-    <sprite>sprites\spr_key</sprite>
-    <sprite>sprites\spr_lamp</sprite>
-    <sprite>sprites\spr_lamp_light</sprite>
-    <sprite>sprites\spr_test_lightLamp</sprite>
     <sprite>sprites\spr_window</sprite>
-    <sprite>sprites\spr_light_window</sprite>
     <sprite>sprites\spr_mainMenu</sprite>
     <sprite>sprites\spr_menuButton</sprite>
     <sprite>sprites\spr_SmooshyGuy</sprite>
-    <sprite>sprites\spr_armChair</sprite>
+    <sprites name="Props">
+      <sprite>sprites\spr_armChair</sprite>
+      <sprite>sprites\spr_barrel</sprite>
+      <sprite>sprites\spr_bed</sprite>
+      <sprite>sprites\spr_cardboardbox1</sprite>
+      <sprite>sprites\spr_cardboardbox2</sprite>
+      <sprite>sprites\spr_cardboardboxweb</sprite>
+      <sprite>sprites\spr_clothbox</sprite>
+      <sprite>sprites\spr_crate</sprite>
+      <sprite>sprites\spr_bookshelf</sprite>
+      <sprite>sprites\spr_coathanger</sprite>
+      <sprite>sprites\spr_fireplace</sprite>
+      <sprite>sprites\spr_sign_down</sprite>
+      <sprite>sprites\spr_sign_up</sprite>
+      <sprite>sprites\spr_sign_exit</sprite>
+      <sprite>sprites\spr_painting1</sprite>
+      <sprite>sprites\spr_painting2</sprite>
+      <sprite>sprites\spr_potplant</sprite>
+      <sprite>sprites\spr_stool</sprite>
+      <sprite>sprites\spr_table</sprite>
+      <sprite>sprites\spr_scytheholder</sprite>
+      <sprite>sprites\spr_rug</sprite>
+    </sprites>
+    <sprites name="lights">
+      <sprite>sprites\spr_lamp2</sprite>
+      <sprite>sprites\spr_bulb</sprite>
+      <sprite>sprites\spr_lamp</sprite>
+      <sprite>sprites\spr_lamp_light</sprite>
+      <sprite>sprites\spr_test_lightLamp</sprite>
+      <sprite>sprites\spr_light_window</sprite>
+    </sprites>
+    <sprites name="keys">
+      <sprite>sprites\spr_key</sprite>
+      <sprite>sprites\spr_redkey</sprite>
+      <sprite>sprites\spr_yellowkey</sprite>
+      <sprite>sprites\spr_bluekey</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
