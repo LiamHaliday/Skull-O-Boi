@@ -235,7 +235,6 @@ if !lampSeen
         &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
             )
         {
-             
              //mp_linear_step(obj_player1.x, obj_player1.y, 2.5, true);
              //
              

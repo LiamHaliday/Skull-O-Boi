@@ -100,6 +100,7 @@ if(global.batteryLife &gt;= 100)
     global.batteryLife = 99;
 }
 
+
 if(global.playerLives == 0)
 {
    room_goto(Dead_Loser);

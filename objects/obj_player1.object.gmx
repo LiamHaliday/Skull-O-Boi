@@ -94,7 +94,21 @@ if (global.isWalking == false){
 }
 
 // Flashlight Toggle
+if (mouse_check_button_pressed(mb_left))
+{
+    //global.flashlightAlpha = 0;
+//    if (global.flashlightOn == false &amp;&amp; global.batteryLife &lt;= 10)
+ //   {
+ //       global.flashlightOn = false;
+ //   }
+    
+    if (global.flashlightOn == true)
+    {
+        // audio_play_sound(flashlightON, 15, false);
+        global.flashlightOn = false; 
+    }
 
+<<<<<<< HEAD
    if (mouse_check_button_pressed(mb_left))
    {
         //global.flashlightAlpha = 0;
@@ -107,10 +121,19 @@ if (global.isWalking == false){
         }
         else if (global.batteryLife &gt; 10){
             
+=======
+    else 
+    {
+        if(global.batteryLife &gt;= 10)
+        {
+            //  audio_play_sound(flashlightOFF, 14, false);
+>>>>>>> master
             global.flashlightOn = true;
           //  audio_play_sound(flashlightOFF, 14, false);
         }
-   }
+    }
+}
+
 if (point_direction(x,y,mouse_x,mouse_y) &lt; 180)
  {
     sprite_index = spr_back_small_p  
