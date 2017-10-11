@@ -155,7 +155,11 @@
     <instance objName="obj_window" x="1216" y="1376" name="inst_722B3561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lamp" x="1600" y="3264" name="inst_1F0154B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller_lighting" x="64" y="0" name="inst_251855E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="Floater_Spawner" x="96" y="0" name="inst_31371501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_dustparticle" x="96" y="0" name="inst_E8042E31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> MainMenuBranch
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

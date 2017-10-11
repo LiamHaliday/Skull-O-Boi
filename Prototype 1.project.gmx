@@ -111,7 +111,14 @@
       <sprite>sprites\spr_yellowkey</sprite>
       <sprite>sprites\spr_bluekey</sprite>
     </sprites>
+<<<<<<< HEAD
     <sprite>sprites\spr_BLACK</sprite>
+=======
+    <sprite>sprites\spr_dustparticle</sprite>
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_TempMainMenu</sprite>
+    </sprites>
+>>>>>>> MainMenuBranch
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -178,6 +185,7 @@
       <object>objects\controlls</object>
       <object>objects\obj_controlls</object>
       <object>objects\obj_loser</object>
+      <object>objects\obj_TempMainMenu</object>
     </objects>
     <objects name="Changer">
       <object>objects\obj_gade</object>
@@ -190,10 +198,16 @@
     <object>objects\obj_lamp</object>
     <object>objects\let_there_be_light</object>
     <object>objects\obj_armChair</object>
+    <object>objects\obj_dustparticle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\MainMenu</room>
     <room>rooms\Zac_newLevels_ones</room>
+<<<<<<< HEAD
+=======
+    <room>rooms\Main_level</room>
+    <room>rooms\Liam_Test_World</room>
+>>>>>>> MainMenuBranch
     <room>rooms\changeRoom</room>
     <room>rooms\Main_level</room>
     <room>rooms\room_level__1</room>

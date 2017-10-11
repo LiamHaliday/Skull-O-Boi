@@ -25,9 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>
 lightningJump = true;
 
+=======
+            <string>lightningJump = false;
+>>>>>>> MainMenuBranch
 EnemySpeed = 1;
 
 seen = false
