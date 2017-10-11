@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Main_level);
+            <string>room_goto(Zac_newLevels_ones);
 </string>
           </argument>
         </arguments>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>// Ambient Lighting
+
 global.ambient_light = 0.05; //ambient_light = 0.02;
 
 global.light_surface = surface_create(view_wview, view_hview);
@@ -37,6 +38,28 @@ sampler_light = shader_get_sampler_index(shd_multiply, "u_sLight");
 
 global.gotkey = false
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -73,6 +96,69 @@ if (global.gotkey == true)
     draw_sprite(spr_key,0,x + 50,y + 45)
 
 }
+
+
+if (room == changeRoom  &amp;&amp; room != Dead_Loser &amp;&amp; room != MainMenu )
+{
+    global.ambient_light = 0.9999; 
+    global.hudOFF = true;
+}
+
+
+
+///adbgsjkfhvcvjwo;eibv
+
+
+if(room != changeRoom &amp;&amp; room != Dead_Loser &amp;&amp; room != MainMenu)
+{
+
+if (global.hudOFF == false)
+{
+
+// Battery Bar
+draw_sprite(spr_batteryUI, 2, 980, 10);  // Back Casing
+draw_sprite_part(spr_batteryUI, 0, 45 , 0, (((sprite_get_width(spr_batteryUI) - 45) / 100) * global.batteryLife) 
+, sprite_get_height(spr_batteryUI), 1025, 10)
+draw_sprite(spr_batteryUI, 1, 980, 10);  // Front Casing
+
+
+
+
+//draw_healthbar(1252,85 , 1055, 25, global.batteryLife, c_white, c_red, c_green, 0, false, false); 
+//draw_sprite(spr_batteryUI, 1, 1035, 10);  // Front Casing
+
+
+// Health Bar
+if (global.playerLives &lt;= 0){
+    draw_sprite(spr_livesUI, 0, 0, 545);  // 0 Lives
+}
+if (global.playerLives == 1){
+    draw_sprite(spr_livesUI, 1, 0, 545);  // 0 Lives
+}
+if (global.playerLives == 2){
+    draw_sprite(spr_livesUI, 2, 0, 545);  // 0 Lives
+}
+if (global.playerLives == 3){
+    draw_sprite(spr_livesUI, 3, 0, 545);  // 0 Lives
+}
+if (global.playerLives == 4){
+    draw_sprite(spr_livesUI, 4, 0, 545);  // 0 Lives
+}
+if (global.playerLives == 5){
+    draw_sprite(spr_livesUI, 5, 0, 545);  // 0 Lives
+}
+if (global.playerLives &gt;= 6){
+    draw_sprite(spr_livesUI, 6, 0, 545);  // 0 Lives
+}
+
+}
+else
+{
+global.hudOFF = false
+}
+
+}
+
 </string>
           </argument>
         </arguments>

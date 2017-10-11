@@ -12,6 +12,9 @@
     <sound>sound\flashlightOFF</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="new Sprites">
+      <sprite>sprites\spr_New_Player</sprite>
+    </sprites>
     <sprite>sprites\spr_box1</sprite>
     <sprite>sprites\spr_eyes</sprite>
     <sprites name="Yellow tile set">
@@ -21,7 +24,7 @@
       <sprite>sprites\spr_corner_yellow_BOTTOMRIGHT</sprite>
       <sprite>sprites\spr_corner_yellow_BOTTOMRIGHT_inside</sprite>
       <sprite>sprites\spr_exit_yellow</sprite>
-      <sprite>sprites\spr_side_yellow</sprite>
+      <sprite>sprites\spr_side_yellowLEFT</sprite>
       <sprite>sprites\spr_side_yellowBOTTOM_TLCorner</sprite>
       <sprite>sprites\spr_side_yellowBOTTOM_TRCorner</sprite>
       <sprite>sprites\spr_side_yellowRIGHT</sprite>
@@ -58,7 +61,7 @@
       <sprite>sprites\spr_wall_side</sprite>
       <sprite>sprites\spr_side_wall_side</sprite>
       <sprite>sprites\spr_wall_corner</sprite>
-      <sprite>sprites\sprite22</sprite>
+      <sprite>sprites\spr_loser</sprite>
     </sprites>
     <sprites name="changeRomm">
       <sprite>sprites\spr_gade</sprite>
@@ -108,6 +111,7 @@
       <sprite>sprites\spr_yellowkey</sprite>
       <sprite>sprites\spr_bluekey</sprite>
     </sprites>
+    <sprite>sprites\spr_BLACK</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -122,18 +126,23 @@
   </shaders>
   <objects name="objects">
     <objects name="yellow tile">
-      <objects name="Main Bits">
-        <object>objects\obj_woodFloor_yellow</object>
-        <object>objects\obj_walls_yellow</object>
-        <object>objects\obj_side_yellow</object>
-        <object>objects\obj_side_yellowBOTTOM</object>
-        <object>objects\obj_side_right</object>
-      </objects>
-      <object>objects\obj_corner_yellowBOTTOMLEFT</object>
-      <object>objects\obj_corner_yellowBOTTOMLEFT_inside</object>
-      <object>objects\obj_corner_yellowBOTTOMRIGHT</object>
-      <object>objects\obj_corner_yellowBOTTOMRIGHT_inside</object>
+      <object>objects\obj_side_yellowBOTTOM</object>
+      <object>objects\obj_corner_yellow_BOTTOMLEFT</object>
+      <object>objects\obj_corner_yellow_BOTTOMLEFT_inside</object>
+      <object>objects\obj_corner_yellow_BOTTOMRIGHT</object>
+      <object>objects\obj_corner_yellow_BOTTOMRIGHT_inside</object>
       <object>objects\obj_exit_yellow</object>
+      <object>objects\obj_side_yellowBOTTOM_TLCorner</object>
+      <object>objects\obj_side_yellowBOTTOM_TRCorner</object>
+      <object>objects\obj_side_yellowLEFT</object>
+      <object>objects\obj_side_yellowRIGHT</object>
+      <object>objects\obj_side_yellowTOP</object>
+      <object>objects\obj_walls_yellow</object>
+      <object>objects\obj_window_Yellow</object>
+      <object>objects\obj_woodFloor_yellow</object>
+      <object>objects\obj_corner_yellow_TOPLEFT</object>
+      <object>objects\obj_corner_yellow_TOPRIGHT</object>
+      <object>objects\obj_BLACK</object>
     </objects>
     <object>objects\obj_window</object>
     <object>objects\controller_camera</object>
@@ -183,15 +192,16 @@
     <object>objects\obj_armChair</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Zac_newLevels_ones</room>
     <room>rooms\MainMenu</room>
-    <room>rooms\Main_level</room>
-    <room>rooms\Liam_Test_World</room>
+    <room>rooms\Zac_newLevels_ones</room>
     <room>rooms\changeRoom</room>
+    <room>rooms\Main_level</room>
     <room>rooms\room_level__1</room>
     <room>rooms\room_level_2</room>
-    <room>rooms\restart</room>
+    <room>rooms\resized_test</room>
+    <room>rooms\Liam_Test_World</room>
     <room>rooms\controllers</room>
+    <room>rooms\restart</room>
     <room>rooms\Dead_Loser</room>
   </rooms>
   <help>
