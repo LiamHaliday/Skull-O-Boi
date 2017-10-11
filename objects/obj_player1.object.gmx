@@ -30,6 +30,7 @@
 playerSpeed = 7.5;
 
 global.gotkey = false
+global.flashlightOn = false
 
 godTime = 5
 
