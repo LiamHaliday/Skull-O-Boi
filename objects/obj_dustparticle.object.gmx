@@ -85,6 +85,13 @@ else
     part_emitter_region(dustsystem,dust_emitter,obj_player1.x,obj_player1.x,obj_player1.y+50,obj_player1.y+50,ps_shape_rectangle,ps_distr_linear)
     part_emitter_stream(dustsystem,dust_emitter,dust,-0)
 }
+
+if (global.playerLives = 0)
+{
+    part_system_destroy(dustsystem);
+}
+
+
 </string>
           </argument>
         </arguments>
