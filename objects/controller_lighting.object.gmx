@@ -113,6 +113,7 @@ if(room != changeRoom &amp;&amp; room != Dead_Loser &amp;&amp; room != MainMenu)
 {
 
 if (global.hudOFF == false)
+
 {
 
 // Battery Bar
