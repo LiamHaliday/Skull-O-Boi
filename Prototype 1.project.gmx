@@ -110,7 +110,24 @@
     </sprites>
     <sprite>sprites\spr_dustparticle</sprite>
     <sprites name="Main Menu">
-      <sprite>sprites\spr_TempMainMenu</sprite>
+      <sprite>sprites\spr_menuArt</sprite>
+      <sprite>sprites\spr_menuBG_04</sprite>
+      <sprite>sprites\spr_menuC_05</sprite>
+      <sprite>sprites\spr_menuFG_02</sprite>
+      <sprite>sprites\spr_MenuLogo</sprite>
+      <sprite>sprites\spr_menuM_03</sprite>
+      <sprite>sprites\spr_menuMoon_06</sprite>
+      <sprite>sprites\spr_menuSky_07</sprite>
+      <sprite>sprites\spr_menuVignette_01</sprite>
+      <sprites name="Buttons">
+        <sprite>sprites\spr_menu_Buttons</sprite>
+        <sprite>sprites\spr_newGameHilite</sprite>
+        <sprite>sprites\spr_newGameCLICKDOWN</sprite>
+        <sprite>sprites\spr_controlsHilite</sprite>
+        <sprite>sprites\spr_controlsCLICKDOWN</sprite>
+        <sprite>sprites\spr_exitHilite</sprite>
+        <sprite>sprites\spr_exitCLICKDOWN</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -165,15 +182,25 @@
         <object>objects\Floater_Spawner</object>
       </objects>
     </objects>
+    <objects name="MainMenu_Animated">
+      <object>objects\obj_menuBG_04</object>
+      <object>objects\obj_menuC_05</object>
+      <object>objects\obj_menuFG_02</object>
+      <object>objects\obj_MenuLogo</object>
+      <object>objects\obj_menuM_03</object>
+      <object>objects\obj_menuMoon_06</object>
+      <object>objects\obj_menuSky_07</object>
+      <object>objects\obj_menuVignette_01</object>
+    </objects>
     <objects name="Main Menu">
-      <object>objects\obj_mainMenu</object>
+      <object>objects\obj_menu_Buttons</object>
       <object>objects\obj_playButton</object>
-      <object>objects\obj_controller_Button</object>
+      <object>objects\obj_controlsButton</object>
       <object>objects\obj_exitButton</object>
       <object>objects\controlls</object>
       <object>objects\obj_controlls</object>
       <object>objects\obj_loser</object>
-      <object>objects\obj_TempMainMenu</object>
+      <object>objects\obj_menuArt</object>
     </objects>
     <objects name="Changer">
       <object>objects\obj_gade</object>
@@ -189,6 +216,7 @@
     <object>objects\obj_dustparticle</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainMenu_Animated</room>
     <room>rooms\MainMenu</room>
     <room>rooms\Zac_newLevels_ones</room>
     <room>rooms\Main_level</room>

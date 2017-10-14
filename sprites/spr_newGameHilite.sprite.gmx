@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>1919</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>1079</bbox_bottom>
+  <bbox_left>752</bbox_left>
+  <bbox_right>1075</bbox_right>
+  <bbox_top>724</bbox_top>
+  <bbox_bottom>1024</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,6 +20,6 @@
   <width>1920</width>
   <height>1080</height>
   <frames>
-    <frame index="0">images\spr_TempMainMenu_0.png</frame>
+    <frame index="0">images\spr_newGameHilite_0.png</frame>
   </frames>
 </sprite>

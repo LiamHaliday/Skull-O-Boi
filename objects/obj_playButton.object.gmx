@@ -3,12 +3,12 @@
   <spriteName>spr_menuButton</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>-100</depth>
+  <depth>-500</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Main_level);
+            <string>if (position_meeting(mouse_x, mouse_y, obj_playButton)){
+    if (mouse_check_button_released(mb_left)){
+        room_goto(Main_level);
+    }
+}
 </string>
           </argument>
         </arguments>

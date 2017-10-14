@@ -51,12 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_playButton" x="928" y="768" name="inst_A20CBC7D" locked="0" code="" scaleX="10.4375" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller_Button" x="928" y="896" name="inst_F2DC2804" locked="0" code="" scaleX="8.5" scaleY="2.125" colour="4294967295" rotation="0"/>
-    <instance objName="obj_exitButton" x="928" y="992" name="inst_D6AB2C17" locked="0" code="" scaleX="5.70967721939087" scaleY="2.70967745780945" colour="4294967295" rotation="0"/>
-    <instance objName="let_there_be_light" x="32" y="-32" name="inst_73745EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="controller_main" x="0" y="-32" name="inst_E3CDE633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TempMainMenu" x="0" y="0" name="inst_427132FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playButton" x="911" y="773" name="inst_A20CBC7D" locked="0" code="" scaleX="10.4375" scaleY="3.47000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controlsButton" x="914" y="885" name="inst_F2DC2804" locked="0" code="" scaleX="8.8100004196167" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exitButton" x="918" y="990" name="inst_D6AB2C17" locked="0" code="" scaleX="5.70967721939087" scaleY="2.70967745780945" colour="4294967295" rotation="0"/>
+    <instance objName="let_there_be_light" x="-32" y="-32" name="inst_73745EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="controller_main" x="-64" y="-32" name="inst_E3CDE633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_Buttons" x="0" y="0" name="inst_0F5C0AA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MenuLogo" x="0" y="0" name="inst_C78A5917" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menuArt" x="0" y="0" name="inst_A4E416A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
