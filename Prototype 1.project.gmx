@@ -129,6 +129,7 @@
         <sprite>sprites\spr_exitCLICKDOWN</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_black</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -143,18 +144,27 @@
   </shaders>
   <objects name="objects">
     <objects name="yellow tile">
-      <objects name="Main Bits">
-        <object>objects\obj_woodFloor_yellow</object>
-        <object>objects\obj_walls_yellow</object>
-        <object>objects\obj_side_yellow</object>
-        <object>objects\obj_side_yellowBOTTOM</object>
-        <object>objects\obj_side_right</object>
-      </objects>
       <object>objects\obj_corner_yellowBOTTOMLEFT</object>
       <object>objects\obj_corner_yellowBOTTOMLEFT_inside</object>
+      <object>objects\obj_side_yellowBOTTOM</object>
+      <object>objects\obj_side_right</object>
       <object>objects\obj_corner_yellowBOTTOMRIGHT</object>
       <object>objects\obj_corner_yellowBOTTOMRIGHT_inside</object>
       <object>objects\obj_exit_yellow</object>
+      <object>objects\obj_side_yellow</object>
+      <object>objects\obj_woodFloor_yellow</object>
+      <object>objects\obj_walls_yellow</object>
+      <object>objects\obj_corner_yellow_BOTTOMLEFT</object>
+      <object>objects\obj_corner_yellow_BOTTOMLEFT_inside</object>
+      <object>objects\obj_corner_yellow_BOTTOMRIGHT</object>
+      <object>objects\obj_corner_yellow_BOTTOMRIGHT_inside</object>
+      <object>objects\obj_corner_yellow_TOPLEFT</object>
+      <object>objects\obj_corner_yellow_TOPRIGHT</object>
+      <object>objects\obj_side_yellowBOTTOM_TLCorner</object>
+      <object>objects\obj_side_yellowBOTTOM_TRCorner</object>
+      <object>objects\obj_side_yellowLEFT</object>
+      <object>objects\obj_side_yellowRIGHT</object>
+      <object>objects\obj_side_yellowTOP</object>
     </objects>
     <object>objects\obj_window</object>
     <object>objects\controller_camera</object>
@@ -214,14 +224,15 @@
     <object>objects\let_there_be_light</object>
     <object>objects\obj_armChair</object>
     <object>objects\obj_dustparticle</object>
+    <object>objects\obj_blackBackground</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Liam_Test_World</room>
     <room>rooms\MainMenu_Animated</room>
     <room>rooms\MainMenu</room>
     <room>rooms\Zac_newLevels_ones</room>
-    <room>rooms\Main_level</room>
-    <room>rooms\Liam_Test_World</room>
     <room>rooms\changeRoom</room>
+    <room>rooms\Main_level</room>
     <room>rooms\room_level__1</room>
     <room>rooms\room_level_2</room>
     <room>rooms\restart</room>

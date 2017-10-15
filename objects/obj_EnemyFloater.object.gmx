@@ -106,6 +106,12 @@ speedF = 2.0
 if (   !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false, false )
     &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
     &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_side, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_wall_side, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_yellowBOTTOM, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_right, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_side_yellow, false, false )
+    &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_walls_yellow, false, false )
     )
 {
     //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);  

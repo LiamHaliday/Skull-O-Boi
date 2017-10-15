@@ -59,6 +59,7 @@
     <instance objName="obj_menu_Buttons" x="0" y="0" name="inst_0F5C0AA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MenuLogo" x="0" y="0" name="inst_C78A5917" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menuArt" x="0" y="0" name="inst_A4E416A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="controller_lighting" x="0" y="-32" name="inst_CBC68B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

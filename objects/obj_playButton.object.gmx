@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if (position_meeting(mouse_x, mouse_y, obj_playButton)){
     if (mouse_check_button_released(mb_left)){
-        room_goto(Main_level);
+        room_goto(Zac_newLevels_ones);
     }
 }
 </string>
