@@ -133,7 +133,6 @@ if(global.playerLives == 0)
             <string>if (global.hudOFF == false)
 {
 
-
 // Battery Bar
 draw_sprite(spr_batteryUI, 2, 980, 10);  // Back Casing
 draw_sprite_part(spr_batteryUI, 0, 45 , 0, (((sprite_get_width(spr_batteryUI) - 45) / 100) * global.batteryLife) 

@@ -6,20 +6,20 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>2</bboxmode>
-  <bbox_left>9</bbox_left>
-  <bbox_right>49</bbox_right>
-  <bbox_top>150</bbox_top>
-  <bbox_bottom>249</bbox_bottom>
+  <bboxmode>0</bboxmode>
+  <bbox_left>0</bbox_left>
+  <bbox_right>1919</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>1079</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>50</width>
-  <height>250</height>
+  <width>1920</width>
+  <height>1080</height>
   <frames>
-    <frame index="0">images\spr_corner_yellow_BOTTOMLEFT_0.png</frame>
+    <frame index="0">images\spr_loser_0.png</frame>
   </frames>
 </sprite>
