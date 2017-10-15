@@ -36,7 +36,7 @@ seenAngle = 32.5;
 lampSeen = false
 
 healthF = 100
-speedF = 2.0
+speedF = 1.0
 </string>
           </argument>
         </arguments>
@@ -116,11 +116,20 @@ if (   !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false
 {
     //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);  
     //mp_linear_step(obj_player1.x, obj_player1.y, speedF, true);
-        if mp_linear_step (obj_player1.x, obj_player1.y, 2.5 , false)
+        if mp_linear_step_object(obj_player1.x, obj_player1.y, speedF, obj_player1)
         {
-            move_towards_point(obj_player1.x, obj_player1.y, 2.5 );
+            move_towards_point(obj_player1.x, obj_player1.y, speedF );
+        }
+     //   else
+        {
+        //instance_destroy()
         }
 }
+        else
+        {
+        instance_destroy()
+        }
+
 </string>
           </argument>
         </arguments>
@@ -203,8 +212,8 @@ seen = false
           <argument>
             <kind>1</kind>
             <string>/// seen 
-speedF = 2.0
-speedF = 0.5 + ((speedF * healthF) / 100)
+
+speedF = 0.25 + ((speedF * healthF) / 100)
 
 if (seen &amp;&amp; global.flashlightOn )
 {

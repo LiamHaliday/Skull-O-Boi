@@ -106,7 +106,7 @@ if (mouse_check_button_pressed(mb_left))
     
     if (global.flashlightOn == true)
     {
-        // audio_play_sound(flashlightON, 15, false);
+         audio_play_sound(flashlightON, 15, false);
         global.flashlightOn = false; 
     }
 
@@ -114,7 +114,7 @@ if (mouse_check_button_pressed(mb_left))
     {
         if(global.batteryLife &gt;= 10)
         {
-            //  audio_play_sound(flashlightOFF, 14, false);
+             audio_play_sound(flashlightOFF, 14, false);
             global.flashlightOn = true;
         }
     }
