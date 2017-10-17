@@ -101,7 +101,6 @@
     <instance objName="obj_woodFloor_yellow" x="2875" y="2700" name="inst_0A83DA7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="3125" y="2200" name="inst_DF1B7ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="2875" y="2450" name="inst_F5D5512C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_woodFloor_yellow" x="2375" y="1950" name="inst_5225167F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="2125" y="1950" name="inst_581AC039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="2125" y="2200" name="inst_89C3A818" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="2375" y="2200" name="inst_B46516A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -144,7 +143,7 @@
     <instance objName="obj_woodFloor_yellow" x="4625" y="2200" name="inst_441BAF04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="4875" y="2200" name="inst_DA2C3E67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="5125" y="2200" name="inst_98C378BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisionObject" x="4900" y="2000" name="inst_F955E04E" locked="0" code="" scaleX="6.25" scaleY="0.77999997138977" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisionObject" x="4925" y="2000" name="inst_F955E04E" locked="0" code="" scaleX="3.90625" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_exit_yellow" x="4875" y="1775" name="inst_8E0D9D6F" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
     <instance objName="Floater_Spawner" x="100" y="0" name="inst_8F35AF76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dustparticle" x="150" y="0" name="inst_0D40D037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -190,6 +189,8 @@
     <instance objName="obj_side_yellowRIGHT" x="4625" y="2300" name="inst_0685B03E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_side_yellowRIGHT" x="4625" y="2550" name="inst_A813BC5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_corner_yellow_BOTTOMRIGHT" x="5175" y="2250" name="inst_F9DF4250" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_YellowGate" x="4475" y="1250" name="inst_46DB77B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_woodFloor_yellow" x="2375" y="1950" name="inst_FC5E39DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

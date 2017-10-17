@@ -70,7 +70,6 @@
     </sprites>
     <sprite>sprites\spr_lvl1floor</sprite>
     <sprite>sprites\spr_cont</sprite>
-    <sprite>sprites\spr_collisionObject</sprite>
     <sprite>sprites\spr_window</sprite>
     <sprite>sprites\spr_mainMenu</sprite>
     <sprite>sprites\spr_menuButton</sprite>
@@ -134,6 +133,19 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_black</sprite>
+    <sprites name="Doors">
+      <sprite>sprites\spr_attic_doorFrame</sprite>
+      <sprite>sprites\spr_basement_doorFrame</sprite>
+      <sprite>sprites\spr_blue_doorFrame</sprite>
+      <sprite>sprites\spr_purple_doorFrame</sprite>
+      <sprite>sprites\spr_yellow_doorFrame</sprite>
+      <sprite>sprites\spr_RedGate</sprite>
+      <sprite>sprites\spr_BlueGate</sprite>
+      <sprite>sprites\spr_YellowGate</sprite>
+      <sprite>sprites\spr_blueDoorCollide</sprite>
+      <sprite>sprites\spr_redDoorCollide</sprite>
+      <sprite>sprites\spr_yellowDoorCollide</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -147,6 +159,22 @@
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
   </shaders>
   <objects name="objects">
+    <objects name="Keys">
+      <object>objects\obj_key</object>
+    </objects>
+    <objects name="Doors">
+      <object>objects\obj_attic_doorFrame</object>
+      <object>objects\obj_basement_doorFrame</object>
+      <object>objects\obj_blue_doorFrame</object>
+      <object>objects\obj_purple_doorFrame</object>
+      <object>objects\obj_yellow_doorFrame</object>
+      <object>objects\obj_RedGate</object>
+      <object>objects\obj_redDoorCollide</object>
+      <object>objects\obj_BlueGate</object>
+      <object>objects\obj_blueDoorCollide</object>
+      <object>objects\obj_YellowGate</object>
+      <object>objects\obj_collisionObject</object>
+    </objects>
     <objects name="yellow tile">
       <object>objects\obj_exit_yellow</object>
       <object>objects\obj_woodFloor_yellow</object>
@@ -216,14 +244,13 @@
       <object>objects\obj_backGade</object>
       <object>objects\obj_moving_player</object>
     </objects>
-    <object>objects\obj_collisionObject</object>
-    <object>objects\obj_key</object>
     <object>objects\obj_enemy_eyes</object>
     <object>objects\obj_lamp</object>
     <object>objects\let_there_be_light</object>
     <object>objects\obj_armChair</object>
     <object>objects\obj_dustparticle</object>
     <object>objects\obj_blackBackground</object>
+    <object>objects\controller_SKIPMENU</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\MainMenu_Animated</room>

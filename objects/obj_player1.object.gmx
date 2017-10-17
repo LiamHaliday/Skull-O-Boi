@@ -206,8 +206,7 @@ for (i = 0; i &lt; instance_number(obj_lamp); i += 1){
             <kind>1</kind>
             <string>if(global.gotkey == true)
 {
-
-    room_goto_next();
+    global.openYellow = true;
 }
 </string>
           </argument>
