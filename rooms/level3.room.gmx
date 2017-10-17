@@ -144,7 +144,7 @@
     <instance objName="obj_woodFloor_yellow" x="4475" y="3750" name="inst_441BAF04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="4725" y="3750" name="inst_DA2C3E67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_woodFloor_yellow" x="4975" y="3750" name="inst_98C378BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisionObject" x="4750" y="3550" name="inst_F955E04E" locked="0" code="" scaleX="6.25" scaleY="0.77999997138977" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisionObject" x="4750" y="3550" name="inst_F955E04E" locked="0" code="" scaleX="6.25" scaleY="0.779999971389771" colour="4294967295" rotation="0"/>
     <instance objName="obj_exit_yellow" x="4725" y="3325" name="inst_8E0D9D6F" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
     <instance objName="Floater_Spawner" x="25" y="1375" name="inst_8F35AF76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dustparticle" x="0" y="1375" name="inst_0D40D037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

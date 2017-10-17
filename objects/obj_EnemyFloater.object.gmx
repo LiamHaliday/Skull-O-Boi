@@ -25,9 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.15
-image_xscale = 0.20
-image_yscale = 0.20
+            <string>
+imageSize = 0.20
+
+
+image_speed = 0.15
+image_xscale = imageSize
+image_yscale = imageSize
+
+
 
 EnemySpeed = 1;
 
@@ -64,13 +70,14 @@ speedF = 1.0
     if (point_direction(x,y,obj_player1.x,obj_player1.y) &gt; 270 ||
      point_direction(x,y,obj_player1.x,obj_player1.y) &lt; 90)
     {
-       image_xscale = -0.20
+       image_xscale = -imageSize
     }
     else
     {
-       image_xscale = 0.20
+       image_xscale = imageSize
     }
 
+ image_yscale = imageSize
  
  if (obj_player1.y &lt; y)
  {
@@ -114,16 +121,13 @@ if (   !collision_line( obj_player1.x, obj_player1.y, x, y, obj_wall_flat, false
     &amp;&amp; !collision_line( obj_player1.x, obj_player1.y, x, y, obj_walls_yellow, false, false )
     )
 {
-    //mp_linear_step_object(obj_player1.x, obj_player1.y, 1, obj);  
-    //mp_linear_step(obj_player1.x, obj_player1.y, speedF, true);
-        if mp_linear_step_object(obj_player1.x, obj_player1.y, speedF, obj_player1)
-        {
-            move_towards_point(obj_player1.x, obj_player1.y, speedF );
-        }
-     //   else
-        {
-        //instance_destroy()
-        }
+    if point_distance(obj_player1.x,obj_player1.y, x,y) &gt; 100
+    {
+    if mp_linear_step (obj_player1.x, obj_player1.y, speedF , false)
+    {
+        move_towards_point(obj_player1.x, obj_player1.y, speedF );
+    }
+    }  
 }
         else
         {
@@ -213,7 +217,8 @@ seen = false
             <kind>1</kind>
             <string>/// seen 
 
-speedF = 0.25 + ((speedF * healthF) / 100)
+speedF = 0.25 + ((10 * healthF) / 100)
+imageSize = 0.10 + (0.10*(healthF / 100))   
 
 if (seen &amp;&amp; global.flashlightOn )
 {
