@@ -21,7 +21,7 @@
       <sprite>sprites\spr_corner_yellow_BOTTOMRIGHT</sprite>
       <sprite>sprites\spr_corner_yellow_BOTTOMRIGHT_inside</sprite>
       <sprite>sprites\spr_exit_yellow</sprite>
-      <sprite>sprites\spr_side_yellow</sprite>
+      <sprite>sprites\spr_side_yellowLEFT</sprite>
       <sprite>sprites\spr_side_yellowBOTTOM_TLCorner</sprite>
       <sprite>sprites\spr_side_yellowBOTTOM_TRCorner</sprite>
       <sprite>sprites\spr_side_yellowRIGHT</sprite>
@@ -146,12 +146,10 @@
     <objects name="yellow tile">
       <object>objects\obj_corner_yellowBOTTOMLEFT</object>
       <object>objects\obj_corner_yellowBOTTOMLEFT_inside</object>
-      <object>objects\obj_side_yellowBOTTOM</object>
-      <object>objects\obj_side_right</object>
+      <object>objects\TEST</object>
       <object>objects\obj_corner_yellowBOTTOMRIGHT</object>
       <object>objects\obj_corner_yellowBOTTOMRIGHT_inside</object>
       <object>objects\obj_exit_yellow</object>
-      <object>objects\obj_side_yellow</object>
       <object>objects\obj_woodFloor_yellow</object>
       <object>objects\obj_walls_yellow</object>
       <object>objects\obj_corner_yellow_BOTTOMLEFT</object>
@@ -162,6 +160,7 @@
       <object>objects\obj_corner_yellow_TOPRIGHT</object>
       <object>objects\obj_side_yellowBOTTOM_TLCorner</object>
       <object>objects\obj_side_yellowBOTTOM_TRCorner</object>
+      <object>objects\obj_side_yellowBOTTOM</object>
       <object>objects\obj_side_yellowLEFT</object>
       <object>objects\obj_side_yellowRIGHT</object>
       <object>objects\obj_side_yellowTOP</object>
@@ -230,9 +229,10 @@
     <room>rooms\Liam_Test_World</room>
     <room>rooms\MainMenu_Animated</room>
     <room>rooms\MainMenu</room>
-    <room>rooms\Zac_newLevels_ones</room>
+    <room>rooms\level1</room>
     <room>rooms\changeRoom</room>
-    <room>rooms\zac_Room_Two</room>
+    <room>rooms\level2</room>
+    <room>rooms\level3</room>
     <room>rooms\Main_level</room>
     <room>rooms\room_level__1</room>
     <room>rooms\room_level_2</room>
