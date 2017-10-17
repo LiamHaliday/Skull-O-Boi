@@ -230,12 +230,17 @@ for (i = 0; i &lt; instance_number(obj_box1); i += 1)
    if (point_direction(instance_find(obj_EnemyFloater,i).x,instance_find(obj_EnemyFloater,i).y,obj_player1.x,obj_player1.y) &gt; 270 ||
 point_direction(instance_find(obj_EnemyFloater,i).x,instance_find(obj_EnemyFloater,i).y,obj_player1.x,obj_player1.y) &lt; 90)
    {
-        draw_sprite_ext(spr_floater_eyes, 1, instance_find(obj_EnemyFloater,i).x - view_xview, instance_find(obj_EnemyFloater,i).y - view_yview, 0.20, 0.20, 
+   
+   
+   
+        draw_sprite_ext(spr_floater_eyes, 1, instance_find(obj_EnemyFloater,i).x - view_xview, instance_find(obj_EnemyFloater,i).y - view_yview, 
+        instance_find(obj_EnemyFloater,i).imageSize, instance_find(obj_EnemyFloater,i).imageSize, 
               0, c_white, 0.8);
     }
     else
     {
-        draw_sprite_ext(spr_floater_eyes, 0, instance_find(obj_EnemyFloater,i).x - view_xview, instance_find(obj_EnemyFloater,i).y - view_yview, 0.20, 0.20, 
+        draw_sprite_ext(spr_floater_eyes, 0, instance_find(obj_EnemyFloater,i).x - view_xview, instance_find(obj_EnemyFloater,i).y - view_yview, 
+        instance_find(obj_EnemyFloater,i).imageSize, instance_find(obj_EnemyFloater,i).imageSize, 
               0, c_white, 0.8);
     }
     }
