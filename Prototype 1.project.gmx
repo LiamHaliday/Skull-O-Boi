@@ -144,11 +144,6 @@
   </shaders>
   <objects name="objects">
     <objects name="yellow tile">
-      <object>objects\obj_corner_yellowBOTTOMLEFT</object>
-      <object>objects\obj_corner_yellowBOTTOMLEFT_inside</object>
-      <object>objects\TEST</object>
-      <object>objects\obj_corner_yellowBOTTOMRIGHT</object>
-      <object>objects\obj_corner_yellowBOTTOMRIGHT_inside</object>
       <object>objects\obj_exit_yellow</object>
       <object>objects\obj_woodFloor_yellow</object>
       <object>objects\obj_walls_yellow</object>
