@@ -255,6 +255,8 @@
     <instance objName="obj_side_yellowTOP" x="1875" y="1250" name="inst_80CDEB10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_side_yellowBOTTOM" x="2125" y="3300" name="inst_F7C70B52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_side_yellowBOTTOM" x="1875" y="3300" name="inst_46764A1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="2325" y="1350" name="inst_6F3E9B8B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="4250" y="1350" name="inst_018F09DC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
