@@ -34,6 +34,10 @@
     </sprites>
     <sprites name="floater">
       <sprite>sprites\spr_floater_eyes</sprite>
+      <sprite>sprites\spr_explode2</sprite>
+      <sprite>sprites\spr_explode3</sprite>
+      <sprite>sprites\spr_explode0</sprite>
+      <sprite>sprites\spr_explode1</sprite>
       <sprite>sprites\spr_floater</sprite>
     </sprites>
     <sprites name="Player">
@@ -184,6 +188,7 @@
       <objects name="floater">
         <object>objects\obj_EnemyFloater</object>
         <object>objects\Floater_Spawner</object>
+        <object>objects\obj_explode</object>
       </objects>
     </objects>
     <objects name="MainMenu_Animated">
@@ -221,6 +226,7 @@
     <object>objects\obj_blackBackground</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Liam_Test_World</room>
     <room>rooms\MainMenu_Animated</room>
     <room>rooms\MainMenu</room>
     <room>rooms\level1</room>
@@ -228,7 +234,6 @@
     <room>rooms\level2</room>
     <room>rooms\level3</room>
     <room>rooms\Main_level</room>
-    <room>rooms\Liam_Test_World</room>
     <room>rooms\room_level__1</room>
     <room>rooms\room_level_2</room>
     <room>rooms\restart</room>

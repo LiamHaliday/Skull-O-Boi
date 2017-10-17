@@ -232,6 +232,7 @@ else if (healthF &lt; 100)
 
 if (healthF &lt;= 0)
 {
+    instance_create(x,y,obj_explode)
     instance_destroy()
 }
 
