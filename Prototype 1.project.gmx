@@ -105,12 +105,6 @@
       <sprite>sprites\spr_test_lightLamp</sprite>
       <sprite>sprites\spr_light_window</sprite>
     </sprites>
-    <sprites name="keys">
-      <sprite>sprites\spr_key</sprite>
-      <sprite>sprites\spr_redkey</sprite>
-      <sprite>sprites\spr_yellowkey</sprite>
-      <sprite>sprites\spr_bluekey</sprite>
-    </sprites>
     <sprite>sprites\spr_dustparticle</sprite>
     <sprites name="Main Menu">
       <sprite>sprites\spr_menuArt</sprite>
@@ -133,6 +127,12 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_black</sprite>
+    <sprites name="keys">
+      <sprite>sprites\spr_key</sprite>
+      <sprite>sprites\spr_redkey</sprite>
+      <sprite>sprites\spr_yellowkey</sprite>
+      <sprite>sprites\spr_bluekey</sprite>
+    </sprites>
     <sprites name="Doors">
       <sprite>sprites\spr_attic_doorFrame</sprite>
       <sprite>sprites\spr_basement_doorFrame</sprite>
@@ -142,10 +142,11 @@
       <sprite>sprites\spr_RedGate</sprite>
       <sprite>sprites\spr_BlueGate</sprite>
       <sprite>sprites\spr_YellowGate</sprite>
-      <sprite>sprites\spr_blueDoorCollide</sprite>
       <sprite>sprites\spr_redDoorCollide</sprite>
+      <sprite>sprites\spr_blueDoorCollide</sprite>
       <sprite>sprites\spr_yellowDoorCollide</sprite>
     </sprites>
+    <sprite>sprites\spr_controlsScreen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -161,6 +162,9 @@
   <objects name="objects">
     <objects name="Keys">
       <object>objects\obj_key</object>
+      <object>objects\obj_redkey</object>
+      <object>objects\obj_yellowkey</object>
+      <object>objects\obj_bluekey</object>
     </objects>
     <objects name="Doors">
       <object>objects\obj_attic_doorFrame</object>
@@ -173,7 +177,8 @@
       <object>objects\obj_BlueGate</object>
       <object>objects\obj_blueDoorCollide</object>
       <object>objects\obj_YellowGate</object>
-      <object>objects\obj_collisionObject</object>
+      <object>objects\obj_yellowDoorCollide</object>
+      <object>objects\obj_collisionObjectTEST</object>
     </objects>
     <objects name="yellow tile">
       <object>objects\obj_exit_yellow</object>
@@ -238,6 +243,7 @@
       <object>objects\obj_controlls</object>
       <object>objects\obj_loser</object>
       <object>objects\obj_menuArt</object>
+      <object>objects\obj_controlsScreen</object>
     </objects>
     <objects name="Changer">
       <object>objects\obj_gade</object>
@@ -255,6 +261,7 @@
   <rooms name="rooms">
     <room>rooms\MainMenu_Animated</room>
     <room>rooms\MainMenu</room>
+    <room>rooms\MainMenu_Controls</room>
     <room>rooms\level1</room>
     <room>rooms\changeRoom</room>
     <room>rooms\level2</room>

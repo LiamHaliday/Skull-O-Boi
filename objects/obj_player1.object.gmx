@@ -41,6 +41,31 @@ lampSeen = false
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Door Globals
+
+global.gotKeyYellow = false;
+global.gotKeyBlue = false;
+global.gotKeyRed = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -187,7 +212,7 @@ for (i = 0; i &lt; instance_number(obj_lamp); i += 1){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_collisionObject">
+    <event eventtype="4" ename="obj_yellowDoorCollide">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -204,9 +229,61 @@ for (i = 0; i &lt; instance_number(obj_lamp); i += 1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.gotkey == true)
+            <string>if(global.gotKeyYellow == true)
 {
     global.openYellow = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_redDoorCollide">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.gotKeyRed == true)
+{
+    global.openRed = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_blueDoorCollide">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.gotKeyBlue == true)
+{
+    global.openBlue = true;
 }
 </string>
           </argument>

@@ -3,7 +3,7 @@
   <spriteName>spr_YellowGate</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-500</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -59,9 +59,9 @@ if (global.enterYellow == true){    // Enter Door
 }
 
 if (global.openYellow == true){     // Open Gate
-    move_towards_point( originalX + 64, obj_YellowGate.y, 1 );
+    move_towards_point( originalX + 128, obj_YellowGate.y, 2 );
     
-    if(obj_YellowGate.x == originalX + 64){
+    if(obj_YellowGate.x == originalX + 128){
         global.enterYellow = true;
     }
     else{
